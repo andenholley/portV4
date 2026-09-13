@@ -594,7 +594,6 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
       <div class="detail-meta">
         <div>ME 488 ROTOR COMPETITION, CAL POLY SLO</div>
         <div>JUNE 2026</div>
-        <div>TEAM — LIAM MCGEE, JAMES MONTELINDO, ANDEN HOLLEY</div>
       </div>
     </div>
 
@@ -748,35 +747,10 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
       </div>
       <div class="detail-meta">
         <div>CAL POLY SLO</div>
-        <div>ROLE — CONTROLS &amp; DATA ANALYSIS</div>
+        <div>CONTROLS &amp; DATA ANALYSIS</div>
       </div>
     </div>
-
-    <div class="placeholder-note">Photos and the full report for this project haven't been added yet — send them over and I'll build out this page the same way as the wind turbine sheet.</div>
-
-    <div class="detail-grid">
-      <div class="schematic-box">
-        <svg viewBox="0 0 360 220" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="#204A63" stroke-width="2" fill="none">
-            <rect x="20" y="90" width="70" height="40"/>
-            <rect x="140" y="90" width="70" height="40"/>
-            <rect x="260" y="90" width="70" height="40"/>
-          </g>
-          <text x="55" y="114" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" fill="#204A63">REF</text>
-          <text x="175" y="114" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" fill="#204A63">PID</text>
-          <text x="295" y="114" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" fill="#204A63">PLANT</text>
-          <line x1="90" y1="110" x2="140" y2="110" stroke="#204A63" stroke-width="2" marker-end="url(#arrowC)"/>
-          <line x1="210" y1="110" x2="260" y2="110" stroke="#204A63" stroke-width="2" marker-end="url(#arrowC)"/>
-          <path d="M295 130 V180 H55 V130" fill="none" stroke="#A8672E" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrowD)"/>
-          <defs>
-            <marker id="arrowC" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#204A63"/></marker>
-            <marker id="arrowD" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 z" fill="#A8672E"/></marker>
-          </defs>
-          <text x="180" y="200" text-anchor="middle" font-family="IBM Plex Mono" font-size="10" fill="#A8672E">MEASURED FEEDBACK</text>
-        </svg>
-        <div class="fig-caption">FIG 4.1 — Closed-loop control structure</div>
-      </div>
-
+    
       <div class="detail-narrative">
         <p class="role">Individual controls project, system identification and PID design.</p>
         <p>Given only measured input/output data from a dynamic system, the task was to work backward to a usable model. I used MATLAB system identification techniques to extract a state-space representation directly from the data, rather than deriving it from first principles.</p>
