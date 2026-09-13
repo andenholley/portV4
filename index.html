@@ -755,12 +755,12 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
         <p class="role">Individual controls project, system identification and PID design.</p>
         <p>My task was to characterize and control an unknown physical system based on experimental responses only. Using system identification through MATLAB and Simulink, I was able to back out the dynamics of the hidden system. What remained was to create a control system with specific performance parameters.</p>
         <p>After creating a transfer function to mimic the experimental system, I was able to start building and testing a State-Space controller. Classic PID methods were also used to inform the direction of my design, but ultimately I felt State-Space was more robust and interesting to use.</p>
-        <table class="spec-table">
+        <table class="spec-table" style="margin-bottom:40px;">
           <tr><td>Method</td><td>MATLAB system identification</td></tr>
           <tr><td>Controller</td><td>State-space &amp; PID design</td></tr>
           <tr><td>Validation</td><td>Closed-loop response vs. performance spec</td></tr>
         </table>
-        <div>
+        
 
         <figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
           <img src="p2.png" 
@@ -779,7 +779,20 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
             FIG 1. Experimental System in BLUE, Simulated in RED. 
           </figcaption>
         </figure>
-        
+
+        <figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
+          <img src="p6.png" 
+            alt="Closed-Loop Transfer Function">
+          <img src="p6.png"
+            alt="Experimental and Simulated Responses">
+          <img src="p6.png"
+             alt="Experimental and Simulated Responses">
+              style="width:75%; height:auto; display:block; border:4px solid var(--blueprint-line); border-radius:4px;">
+          <figcaption class="fig-caption" style="margin-top:10px;">
+            FIG 1. Experimental System in BLUE, Simulated in RED. 
+          </figcaption>
+        </figure>
+          
       </div>
     </div>
   </div>
