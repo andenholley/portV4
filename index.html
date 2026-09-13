@@ -753,17 +753,28 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
     
       <div class="detail-narrative">
         <p class="role">Individual controls project, system identification and PID design.</p>
-        <p>Given only measured input/output data from a dynamic system, the task was to work backward to a usable model. I used MATLAB system identification techniques to extract a state-space representation directly from the data, rather than deriving it from first principles.</p>
-        <p>From there I tuned a PID controller against that identified model and validated the closed-loop response against defined performance specifications — overshoot, settling time, steady-state error. It's a small project, but it's the same instinct that ran through my senior project: don't trust a model until you've checked it against something measured.</p>
+        <p>My task was to characterize and control an unknown physical system based on experimental responses only. Using system identification through MATLAB and Simulink, I was able to back out the dynamics of the hidden system. What remained was to create a control system with specific performance parameters.</p>
+        <p>After creating a transfer function to mimic the experimental system, I was able to start building and testing a State-Space controller. Classic PID methods were also used to inform the direction of my design, but ultimately I felt State-Space was more robust and interesting to use.</p>
         <table class="spec-table">
           <tr><td>Method</td><td>MATLAB system identification</td></tr>
           <tr><td>Controller</td><td>State-space &amp; PID design</td></tr>
           <tr><td>Validation</td><td>Closed-loop response vs. performance spec</td></tr>
-        </table>
+          </table>
       </div>
     </div>
   </div>
 </div>
+      <div class="detail-narrative">
+        <p class="role">Experimental Set-Up and Responses</p>
+         </div>
+      <div class="schematic-box">
+        <img src="IMG_6737.jpg">
+        <div class="fig-caption">FIG 1. Experimental Responses Chosen for System Identification</div>
+      </div>
+    </div>
+       
+
+
 
 <!-- ============ LIGHTBOX ============ -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
