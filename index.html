@@ -760,52 +760,59 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
           <tr><td>Controller</td><td>State-space &amp; PID design</td></tr>
           <tr><td>Validation</td><td>Closed-loop response vs. performance spec</td></tr>
         </table>
-        
 
-        <figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
-          <img src="p2.png" 
-             alt="Experimental and Simulated Chirp Responses" 
-              style="width:75%; height:auto; display:block; border:4px solid var(--blueprint-line); border-radius:4px;">
-          <figcaption class="fig-caption" style="margin-top:10px;">
-            FIG 1. Experimental System in BLUE, Simulated in RED. 
-          </figcaption>
-        </figure>
+        <!-- FIG 1 & 2 side by side -->
+<div style="display:flex; gap:24px; max-width:900px; margin:0 auto 32px; align-items:flex-start;">
+  <figure style="margin:0; flex:1; text-align:center;">
+    <img src="p2.png" 
+         alt="Experimental and Simulated Chirp Responses" 
+         style="width:100%; height:auto; display:block; border:4px solid var(--blueprint-line); border-radius:4px;">
+    <figcaption class="fig-caption" style="margin-top:10px;">
+      FIG 1. Experimental system in BLUE, simulated in RED.
+    </figcaption>
+  </figure>
 
-        <figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
-          <img src="p1.png" 
-             alt="Experimental and Simulated Responses" 
-              style="width:75%; height:auto; display:block; border:4px solid var(--blueprint-line); border-radius:4px;">
-          <figcaption class="fig-caption" style="margin-top:10px;">
-            FIG 1. Experimental System in BLUE, Simulated in RED. 
-          </figcaption>
-        </figure>
+  <figure style="margin:0; flex:1; text-align:center;">
+    <img src="p1.png" 
+         alt="Experimental and Simulated Responses" 
+         style="width:100%; height:auto; display:block; border:4px solid var(--blueprint-line); border-radius:4px;">
+    <figcaption class="fig-caption" style="margin-top:10px;">
+      FIG 2. Experimental system in BLUE, simulated in RED.
+    </figcaption>
+  </figure>
+</div>
 
-        <figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
-  <img src="p6.png" 
-       alt="Closed-Loop Transfer Function"
-       style="width:75%; height:auto; display:block; margin:0 auto; border:4px solid var(--blueprint-line); border-radius:4px;">
-  <figcaption class="fig-caption" style="margin-top:10px;">
-    FIG 1. Closed-loop transfer function.
-  </figcaption>
-</figure>
+<!-- Math spelled out in text -->
+<div style="max-width:700px; margin:0 auto 40px; font-family:'IBM Plex Mono', monospace; font-size:14px; line-height:1.9; color:var(--blueprint);">
 
-<figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
-  <img src="p4.png" 
-       alt="Experimental and Simulated Responses"
-       style="width:75%; height:auto; display:block; margin:0 auto; border:4px solid var(--blueprint-line); border-radius:4px;">
-  <figcaption class="fig-caption" style="margin-top:10px;">
-    FIG 2. Experimental System in BLUE, Simulated in RED.
-  </figcaption>
-</figure>
+  <p style="font-weight:600; margin-bottom:12px;">State-space model</p>
+  <div style="overflow-x:auto; margin-bottom:24px;">
+    <div>ẋ&nbsp; =&nbsp; A x&nbsp; +&nbsp; B u</div>
+    <div style="margin-top:10px;">
+      A&nbsp; =&nbsp;
+      [ −0.693,&nbsp; −5.323,&nbsp; −2.504,&nbsp; 0 ;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp; 0 ;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp; 0 ;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1,&nbsp;&nbsp;&nbsp;&nbsp; 0 ]
+    </div>
+    <div style="margin-top:10px;">B&nbsp; =&nbsp; [ 1, 0, 0, 0 ]ᵀ</div>
+    <div style="margin-top:10px;">y&nbsp; =&nbsp; C x,&nbsp;&nbsp; C&nbsp; =&nbsp; [ 0, 2.238, 0.2504, 8.861 ]</div>
+  </div>
 
-<figure style="margin:0 auto 32px; max-width:900px; text-align:center;">
-  <img src="p5.png" 
-       alt="Experimental and Simulated Responses"
-       style="width:75%; height:auto; display:block; margin:0 auto; border:4px solid var(--blueprint-line); border-radius:4px;">
-  <figcaption class="fig-caption" style="margin-top:10px;">
-    FIG 3. Experimental System in BLUE, Simulated in RED.
-  </figcaption>
-</figure>
+  <p style="font-weight:600; margin-bottom:12px;">Transfer function</p>
+  <div style="margin-bottom:24px;">
+    G(s)&nbsp; =&nbsp; (2.238s² + 0.2504s + 8.861) / (s⁴ + 0.693s³ + 5.323s² + 2.504s)
+  </div>
+
+  <p style="font-weight:600; margin-bottom:12px;">Closed-loop poles &amp; gain</p>
+  <div>
+    poles&nbsp; =&nbsp; [ −3.01, −1, −3, −2, −1.5 ]<br>
+    K<sub>gain</sub>&nbsp; =&nbsp; [ 9.817, 37.2520, 73.3539, 75.9595, −3.0572 ]
+  </div>
+
+</div>
+
+    
           
       </div>
     </div>
