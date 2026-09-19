@@ -812,8 +812,32 @@ table.data-table td:first-child, table.data-table th:first-child{ text-align:lef
       FIG 3. Simulink System used to validate control system, and track inputs/outputs.
       </figcaption>
     </figure>
-    <p.>Despite creating a working controller, I needed to validate its effect on the real system, and ensure we reach a proper settling time without oversaturating our actuators</p.>
-          
+
+           
+    <p.>Despite creating a working controller, I needed to validate its effect on the real system, and ensure we reach a proper settling time without oversaturating our actuators. The graphs below demonstrate the real effects of my controller on the system.</p.>
+     <div class="detail-narrative">
+        <p class="role">System Details and Solution</p>
+<div style="display:flex; gap:24px; max-width:900px; margin:0 auto 40px; align-items:flex-start;">
+  <figure style="margin:0; flex:1; text-align:center;">
+    <img src="p2.png" 
+         alt="Experimental and Simulated Chirp Responses" 
+         onclick="openLightbox('p2.png')"
+         style="width:100%; height:auto; display:block; cursor:zoom-in; border:4px solid var(--blueprint-line); border-radius:4px;">
+    <figcaption class="fig-caption" style="margin-top:10px;">
+      FIG 1. Experimental system in BLUE, simulated in RED.
+    </figcaption>
+  </figure>
+
+  <figure style="margin:0; flex:1; text-align:center;">
+    <img src="p1.png" 
+         alt="Experimental and Simulated Responses" 
+         onclick="openLightbox('p1.png')"
+         style="width:100%; height:auto; display:block; cursor:zoom-in; border:4px solid var(--blueprint-line); border-radius:4px;">
+    <figcaption class="fig-caption" style="margin-top:10px;">
+      FIG 2. Experimental system in BLUE, simulated in RED.
+    </figcaption>
+  </figure>
+</div>     
       </div>
     </div>
   </div>
